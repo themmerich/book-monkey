@@ -9,9 +9,12 @@ import { Book } from '../shared/book';
 export class BookDetailsComponent implements OnInit {
   @Input() book!: Book;
   @Output() showListEvent = new EventEmitter<any>();
+
   ngOnInit(): void { }
-  getRating(num: number) {
-    return new Array(num);
+
+  getRating(num: number): number[] {
+    const ratings: number[] = new Array(num);
+    return ratings;
   }
   showBookList() {
     this.showListEvent.emit();
