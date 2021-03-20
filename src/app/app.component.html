@@ -1,5 +1,23 @@
-<div class="ui menu">
-  <a routerLink="home" routerLinkActive="active" class="item">Home</a>
-  <a routerLink="books" routerLinkActive="active" class="item">Bücher</a>
+<div class="ui fixed inverted menu">
+  <div class="ui text container">
+    <div class="header item">
+      <img class="logo" src="assets/logo2.png">
+      Book Monkey
+    </div>
+    <a routerLink="home" routerLinkActive="active" class="item">Home</a>
+    <a routerLink="books" routerLinkActive="active" class="item">Books</a>
+  </div>
+
+  <div class="right menu">
+    <div class="item">
+      <div class="ui transparent icon input">
+        <input type="text" placeholder="Search...">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+  </div>
 </div>
-<router-outlet></router-outlet>
+<div class="ui main text container">
+  <router-outlet></router-outlet>
+</div>
+
